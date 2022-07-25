@@ -1,18 +1,5 @@
-[package]
-name = "serial2"
-version = "0.1.6"
-description = "Cross platform serial ports"
-license = "BSD-2-Clause OR Apache-2.0"
-repository = "https://github.com/de-vri-es/serial2-rs"
-documentation = "https://docs.rs/serial2"
-keywords = ["serial", "serial-port", "COM-port", "RS232", "tty"]
-categories = ["hardware-support", "network-programming", "os", "science::robotics"]
-
-edition = "2021"
-
-[target.'cfg(unix)'.dependencies]
-libc = "0.2.109"
-cfg-if = "1.0.0"
-
-[target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3.9", features = ["commapi", "fileapi", "handleapi", "ioapiset", "std", "synchapi", "winbase", "winerror", "winreg"] }
+[workspace]
+resolver = "2"
+members = [
+	"serial2",
+]
