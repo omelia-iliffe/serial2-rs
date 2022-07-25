@@ -2,4 +2,5 @@
 resolver = "2"
 members = [
 	"serial2",
+	"serial2-mio",
 ]

@@ -1,0 +1,15 @@
+[package]
+name = "serial2-mio"
+version = "0.1.0"
+description = "Cross platform serial ports for mio"
+repository = "https://github.com/de-vri-es/serial2-rs"
+documentation = "https://docs.rs/serial2-mio"
+keywords = ["serial", "serial-port", "COM-port", "RS232", "tty"]
+categories = ["hardware-support", "network-programming", "os", "science::robotics"]
+
+edition = "2021"
+
+[dependencies]
+libc = "0.2.124"
+mio = { version = "0.8.4", features = ["os-ext"] }
+serial2 = { version = "0.1.6", path = "../serial2" }
